@@ -17,4 +17,4 @@ We reserved all these methods and made some changes. The usage and intention of 
 
 ## Demo
 
-[Here](../../../../e2e_test_demo/) is a demo page for testing ConfluxPortal. There's example code of calling `cfx_signTypedData_v4`, `personal_sign` and `cfx_sign` in it.
+[Here]() is a demo page for testing ConfluxPortal. There's example code of calling `cfx_signTypedData_v4`, `personal_sign` and `cfx_sign` in it.
