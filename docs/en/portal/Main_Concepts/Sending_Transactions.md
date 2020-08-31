@@ -5,7 +5,7 @@ custom_edit_url: https://github.com/Conflux-Chain/conflux-portal-docs/edit/maste
 ---
 Transactions are a formal action on a blockchain. They are always initiated in
 ConfluxPortal with a call to the `cfx_sendTransaction` method. They can involve
-a simple sending of ether, may result in sending tokens, creating a new smart
+a simple sending of CFX, may result in sending tokens, creating a new smart
 contract, or changing state on the blockchain in any number of ways. They are
 always initiated by a signature from an _external account_, or a simple key
 pair. 
@@ -22,7 +22,8 @@ const transactionParameters = {
   from: accounts[0], // must match user's active address.
   value: '0x00', // Only required to send ether to the recipient from the initiating external account.
   data: '0x7f7465737432000000000000000000000000000000000000000000000000000000600057', // Optional, but used for defining smart contract creation and interaction.
-  chainId: 3 // Used to prevent transaction reuse across blockchains. Auto-filled by ConfluxPortal.
+  chainId: 3, // Used to prevent transaction reuse across blockchains. Auto-filled by ConfluxPortal.
+  storageLimit: 1024 // used to limit the total storage usage of a transaction
 }
 
 conflux.sendAsync({
@@ -79,8 +80,17 @@ where your application knows more about the target network than we do.
 Optional parameter. Rarely useful to Dapp developers.
 
 Gas limit is a highly optional parameter, and we automatically calculate a
-reasonable price for it. You will probably know that your smart contract
+reasonable amount for it. You will probably know that your smart contract
 benefits from a custom gas limit if it ever does for some reason. 
+
+### StorageLimit [optional]
+
+Optional parameter. Rarely useful to Dapp developers.
+
+StorageLimit is a highly optional parameter, and we automatically calculate a
+reasonable amount for it. You will probably know that your smart contract
+benefits from a custom storage limit if it ever does for some reason. 
+
 
 ### To [semi-optional]
 
