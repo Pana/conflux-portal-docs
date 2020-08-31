@@ -27,9 +27,7 @@ In the top right menu of ConfluxPortal, you can select the network that you are
 currently connected to. Among several popular defaults, you'll find `Custom RPC`
 and `Localhost 12539`. These are both useful for connecting to a test
 blockchain, like [conflux local network
-lite](https://github.com/yqrashawn/conflux-local-network-lite#readme), which you
-can quickly install and start if you have `npm` installed with `npm i -g
-ganache-cli && ganache-cli`. 
+lite](https://github.com/yqrashawn/conflux-local-network-lite#readme).
 
 <!-- Ganache has some great features for starting it up with different states. If you -->
 <!-- start it with the `-m` flag, you can feed it the same seed phrase you have in -->
