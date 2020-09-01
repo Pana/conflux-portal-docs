@@ -137,7 +137,7 @@ Conflux JSON-RPC
 API](https://conflux-chain.github.io/conflux-doc/json-rpc/). 
 
 Here's an example of everyone's favorite method, `cfx_sendTransaction`, which is
-both how Ether is sent, and how smart contract methods are called: 
+both how CFX is sent, and how smart contract methods are called: 
 ```javascript
 params: [{
   "from": "0xb60e8dd61c5d32be8058bb8eb970870f07233155",
@@ -213,7 +213,7 @@ for more details._
 This API will become available during the week of **November 25, 2019**. It will
 be the only API supported starting **January 13, 2020.** If you want examples of
 how to setup your dapp using the new API, you can check out [this
-gist](https://gist.github.com/rekmarks/d318677c8fc89e5f7a2f526e00a0768a). 
+gist](https://gist.github.com/Pana/0839e442c006d556e696c02ca0770e2f). 
 
 ## Methods
 
@@ -274,7 +274,7 @@ Returns a `Promise` that resolves to the result of the method. Not all methods
 require `params`, e.g. `conflux.send('cfx_accounts')`. 
 
 Here's an example of everyone's favorite method, `cfx_sendTransaction`, which is
-both how Ether is sent, and how smart contract methods are called: 
+both how CFX is sent, and how smart contract methods are called: 
 ```javascript
 params: [{
   "from": "0xb60e8dd61c5d32be8058bb8eb970870f07233155",
@@ -334,7 +334,7 @@ Conflux JSON-RPC
 API](https://conflux-chain.github.io/conflux-doc/json-rpc/). 
 
 Here's an example of everyone's favorite method, `cfx_sendTransaction`, which is
-both how Ether is sent, and how smart contract methods are called: 
+both how CFX is sent, and how smart contract methods are called: 
 ```javascript
 params: [{
   "from": "0xb60e8dd61c5d32be8058bb8eb970870f07233155",
