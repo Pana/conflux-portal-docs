@@ -114,7 +114,6 @@ The provider API itself is very simple, and wraps [Conflux
 JSON-RPC](https://conflux-chain.github.io/conflux-doc/json-rpc/) formatted
 messages, which is why developers usually use a convenience library for
 interacting with the provider, like
-[js-conflux-sdk](https://www.npmjs.com/package/js-conflux-sdk),
-[conffle](https://github.com/liuis/conffle#readme), or others. From those tools,
+[js-conflux-sdk](https://www.npmjs.com/package/js-conflux-sdk), or others. From those tools,
 you can generally find sufficient documentation to interact with the provider,
 without reading this lower-level API. 
